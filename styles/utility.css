@@ -1,0 +1,17 @@
+.px-base{
+  padding-inline: var(--px-base);
+}
+
+.px-lg{
+  padding-inline: var(--px-lg);
+}
+
+.desktop-only{
+  display: none;
+}
+
+@media (width >= 80em){
+  .desktop-only{
+    display: initial;
+  }
+}

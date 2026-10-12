@@ -1,33 +1,33 @@
 header{
-  padding-block: 32px;
+  padding-block: 2rem;
 
   font: var(--text-md);
 }
 
 header .container{
-  display: flex;
+  display: grid;
+  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 }
 
 #profile{
-  display: flex;
-  gap: 32px;
+  display: grid;
 }
 
 #profile > div{
-  max-width: 384px;
+  max-width: 18.5rem;
 }
 
 #profile h1{
-  font: var(--text-lg);
+  font: bold 1.5rem/125% var(--font-family);
   color: var(--text-color-primary);
-  margin-bottom: 8px;
+  margin-block: 1rem .5rem;
 }
 
 #profile img{
-  width: 176px;
-  height: 176px;
+  width: 7.5rem;
+  height: 7.5rem;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -36,12 +36,41 @@ header .container{
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  width: 280px;
+  gap: 1rem;
+  width: 17.5rem;
 }
 
 #info li{
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+@media (width >= 80em){
+  header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #profile img{
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  #profile{
+    display: flex;
+    gap: 2rem;
+  }
+
+  #profile h1{
+    font: var(--text-lg);
+    color: var(--text-color-primary);
+    margin: 0 0 .5rem;
+  }
+
+  #profile > div{
+    max-width: 24rem;
+  }
 }
