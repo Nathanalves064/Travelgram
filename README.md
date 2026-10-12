@@ -4,3 +4,4 @@ Projeto inspirado no layout do Instagram, mas com uma essência focada em viagen
 
 Primeiras interações com "display: flex", "justify-content" e paddings mais inteligentes.
 
+EDIT: Adicionada responsividade para dispositivos mobile.
